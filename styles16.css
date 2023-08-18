@@ -1,0 +1,232 @@
+
+
+
+/* 
+Challenge:
+Style the app according to the provided design.
+The font is called "Happy Monkey" and can be
+embedded via Google Fonts.
+
+Don't know how to make an image round? Google it!
+Also, consider how you should select the image
+(class vs id vs element selector).
+*/
+
+/* 
+Challenge:
+Add colors to the site based on the provided design.
+
+pink: #EFB0C9
+blue: #a2d2ff
+white:#ffffff
+
+*/
+
+#gift-img-ready {
+    height: 200px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive;
+    background: linear-gradient(#a2d2ff, #EFB0C9);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* 
+Challenge:
+Add a thin blurred border around the <h1>, <h2>,
+and <h3> using the text-shadow technique you 
+learned in the Space Exploration section. Set 
+the blur to 1px and the color to black.
+*/
+
+h1, h2, h3, h4, p {
+    text-shadow: 0px 0px 1px black;
+}
+
+/* h1 {
+    text-shadow: 0px 0px 1px black;
+}
+
+h2 {
+    text-shadow: 0px 0px 1px black;
+}
+
+h4 {
+    text-shadow: 0px 0px 1px black;
+} */
+
+
+#bff-img {
+    width: 150px;
+    border-radius: 40%;
+    border: 6px solid #EFB0C9;
+}
+
+h2, h4 {
+    background: #EFB0C9;
+    /* display: inline; */
+}
+
+/* 
+Challenge:
+Follow my orders on where we should
+leave up our lab equipment!
+
+justify-content:
+start, center, end, space-around,
+space-evenly, space-between
+
+align-items:
+start, center, end
+
+This properties only works in flex(flexbox).
+
+if flex-direction = column , it makes justify content in y-axis and align-item in x-axis. OTHERWISE the justify content is in x-axis and align-items is in y-axis.
+*/
+
+/* 
+Challenge:
+Make the bday elements look like the
+provided design slide.
+*/
+
+#bday-age {
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0 10px 0;
+}
+
+#bday-date {
+    margin: 0;
+    background: #EFB0C9;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    align-items: center;
+}
+/* 
+Challenge:
+First, wrap the HTML elements in a <div> with an
+id called "header"
+
+Then, select the "header" and use flexbox to achieve
+the layout you've been provided in the design slide.
+*/
+
+
+/* 
+Challenge:
+1. Create a "gift-section" <div> that will wrap
+   all the elements for the first gift.
+2. Add the <h2>, <h3>, and <img> elements, and
+   give all of them their own classes.
+3. Style the elements according to the design.
+
+PS: the image should be 400px wide.
+
+*/
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+.gift-img {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    /* background: linear-gradient(gray,darkblue); */
+    background-image: url("images/gift.jpg");
+    background-size: cover;
+}
+
+/* 
+Challenge:
+"Fix" the "gift-img" <div> so that it looks like
+the provided design again.
+
+It needs a height (should be a square), a background
+image, and to be enterprise again.
+*/
+
+/* 
+Challenge:
+Swap the gift paper image out with
+the happy.gif when you hover over it!
+*/
+
+#gift-img-happy:hover {
+    background-image: url("images/birthday.gif");
+}
+
+#gift-img-hot:hover {
+    background-image: url("images/hot.gif");
+}
+
+/* 
+Challenge:
+Create the next GIFT (hot.gif). Its HTML strcuture
+should be like the previous one, but without the
+"gift-hint" element.
+
+However, now that you have multiple GIFTS on the page,
+you cannot use the "gift-img" class to set the GIF
+background-image(s) on :hover. Each GIFT will need a
+unique id that controls which background image that
+should be shown when hovering over element.
+*/
+
+/* 
+Challenge:
+Create the "genius" and "badass" GIFT sections.
+
+Texts:
+If I had to describe you with ONE word
+
+The only person as badass as you
+
+*/
+
+#gift-img-smart:hover {
+    background-image: url("images/smart.gif");
+}
+
+#gift-img-fuck:hover {
+    background-image: url("images/fuck.gif");
+}
+
+
+#gift-img-ready:hover {
+    background-image: url("images/ready.gif");
+}
+
+#footer {
+    width: 400px;
+    margin: 40px auto 20px;
+    font-style: italic;
+}
+
+a {
+    color:white;
+}
